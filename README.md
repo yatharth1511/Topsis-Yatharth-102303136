@@ -25,21 +25,6 @@ Steps:
 4. Compute separation measures (S⁺ and S⁻)
 5. Calculate performance score
 6. Rank alternatives
-
-### Normalization
-- **Formula:**
-  $$ r
-i
-j
-=
-x
-i
-j
-∑
-x
-i
-j
-2 $$
 ---
 
 ## 2. R Implementation
