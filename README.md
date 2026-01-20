@@ -1,18 +1,18 @@
-# TOPSIS Project (R + Web Service)
+# TOPSIS- Yatharth- 102303136
 
 This repository contains a complete implementation of the TOPSIS
-(Technique for Order Preference by Similarity to Ideal Solution) method.
+(Technique for Order Preference by Similarity to Ideal Solution) method by **Yatharth Sharma** (Roll No.: 102303136)
 
 The project includes:
-- Full TOPSIS implementation in "R"
-- A :Colab notebook** explaining methodology and results
+- Full TOPSIS implementation in **R**
+- A **Colab notebook** explaining methodology and results
 - A **FastAPI backend**
 - A **Streamlit frontend**
 - Email delivery of results
 
 ---
 
-### 1. Methodology (TOPSIS)
+## Methodology
 
 TOPSIS ranks alternatives based on their distance from:
 - Ideal best solution
@@ -25,10 +25,9 @@ Steps:
 4. Compute separation measures (S⁺ and S⁻)
 5. Calculate performance score
 6. Rank alternatives
-
 ---
 
-### 2. R Implementation
+## R Implementation
 
 The `R/topsis_full.R` file displays:
 - Normalized matrix
@@ -41,7 +40,7 @@ The `R/topsis_full.R` file displays:
 
 ---
 
-### 3. Colab Notebook
+## Colab Notebook
 
 The `notebook/TOPSIS_Assignment.ipynb` notebook:
 - Explains methodology step by step
@@ -76,23 +75,36 @@ The `notebook/TOPSIS_Assignment.ipynb` notebook:
 ### Website Result
 ![Website Result](images/website_result.png)
 
-### 4. Web Service
+## Web Service
 
-## Frontend
+### Frontend
 - Streamlit (centrally aligned UI)
 - Upload CSV
 - Enter weights, impacts, email
 - Display result table
 - Download output.csv
 
-## Backend
+### Backend
 - FastAPI
 - High performance
 - Sends output.csv via email
 
 ---
 
-### 5. How to Run Web App
+## Publishing to PyPI
 
+### Build
 ```bash
-pip install -r web/requirements.txt
+pip -m build
+```
+### Upload
+```bash
+python -m twine upload dist/*
+```
+### Test Installation
+```bash
+pip install Topsis-Yatharth-102303136
+topsis-cli --help
+```
+## Author
+### Yatharth Sharma, Roll No. 102303136 ###

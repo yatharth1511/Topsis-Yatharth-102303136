@@ -12,7 +12,7 @@ OUTPUT_DIR = "../outputs"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# -------- TOPSIS LOGIC --------
+# TOPIS_LOGIC
 def topsis(df, weights, impacts):
     matrix = df.iloc[:, 1:].values.astype(float)
     weights = np.array(weights)
@@ -32,7 +32,7 @@ def topsis(df, weights, impacts):
 
     return df
 
-# -------- EMAIL FUNCTION --------
+# EMAIL_SETUP
 def send_email(receiver_email, attachment_path):
     sender_email = "your_email@gmail.com"
     sender_password = "YOUR_APP_PASSWORD"
@@ -56,7 +56,7 @@ def send_email(receiver_email, attachment_path):
         server.login(sender_email, sender_password)
         server.send_message(msg)
 
-# -------- API ENDPOINT --------
+# API_ENDPT
 @app.post("/run-topsis/")
 async def run_topsis(
     file: UploadFile,
@@ -78,10 +78,8 @@ async def run_topsis(
     output_path = os.path.join(OUTPUT_DIR, "output.csv")
     result.to_csv(output_path, index=False)
 
-    # send email with attachment
     send_email(email, output_path)
 
-    # return result as JSON for frontend display
     return {
         "message": "TOPSIS completed. Result sent to email.",
         "data": result.to_dict(orient="records")
