@@ -12,7 +12,7 @@ The project includes:
 
 ---
 
-1. Methodology (TOPSIS)
+### 1. Methodology (TOPSIS)
 
 TOPSIS ranks alternatives based on their distance from:
 - Ideal best solution
@@ -28,7 +28,7 @@ Steps:
 
 ---
 
-2. R Implementation
+### 2. R Implementation
 
 The `R/topsis_full.R` file displays:
 - Normalized matrix
@@ -41,7 +41,7 @@ The `R/topsis_full.R` file displays:
 
 ---
 
-3. Colab Notebook
+### 3. Colab Notebook
 
 The `notebook/TOPSIS_Assignment.ipynb` notebook:
 - Explains methodology step by step
@@ -50,23 +50,23 @@ The `notebook/TOPSIS_Assignment.ipynb` notebook:
 
 ---
 
-4. Web Service
+### 4. Web Service
 
-# Frontend
+## Frontend
 - Streamlit (centrally aligned UI)
 - Upload CSV
 - Enter weights, impacts, email
 - Display result table
 - Download output.csv
 
-# Backend
+## Backend
 - FastAPI
 - High performance
 - Sends output.csv via email
 
 ---
 
-5. How to Run Web App
+### 5. How to Run Web App
 
 ```bash
 pip install -r web/requirements.txt
