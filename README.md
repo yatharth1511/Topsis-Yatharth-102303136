@@ -1,7 +1,7 @@
 # TOPSIS- Yatharth- 102303136
 
 This repository contains a complete implementation of the TOPSIS
-(Technique for Order Preference by Similarity to Ideal Solution) method.
+(Technique for Order Preference by Similarity to Ideal Solution) method by **Yatharth Sharma** (Roll No.: 102303136)
 
 The project includes:
 - Full TOPSIS implementation in **R**
