@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# R
+.Rhistory
+.RData
+
+# Outputs
+output/
+uploads/
+outputs/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
